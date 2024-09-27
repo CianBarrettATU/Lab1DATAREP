@@ -1,9 +1,11 @@
 const ages = [25,31,42,77];
 
-productNumber = (value) => {
-    console.log(ages.map((age => age * 2)));
-}
+let product = ages.map((value)=>{
+   if(value <= 70) {
+    return value * 2;
+   }
+ })
 
-productNumber();
+console.log(product);
 
 
