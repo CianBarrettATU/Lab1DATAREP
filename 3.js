@@ -16,6 +16,8 @@ let deleteTask = ((task)=> {
     let index = Tasks.indexOf(task)
     if(index <= Tasks.length){
         Tasks.splice(index,1);
+        console.log("deleted task:", task);
+        console.log(Tasks.length);
     }
 })
 
@@ -28,3 +30,4 @@ listAll();
 deleteTask("Clean");
 
 listAll();
+
